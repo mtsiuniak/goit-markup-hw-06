@@ -560,6 +560,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
         column-gap: 24px;
         row-gap: 72px;
     }
+
+    .advantage-title {
+        text-align: left;
+    }
         
         .advantage-item {
             width: calc((100% - 24px) / 2);
@@ -601,6 +605,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
             }
 
         .advantage-title {
+            text-align: center;
             font-size: 20px;
             font-weight: 500;
             line-height: 1.2;
