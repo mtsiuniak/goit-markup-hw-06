@@ -544,16 +544,15 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 
 
 
-/* /ADVANTAGE SECTION TABLEY STYLES START */
+/* /ADVANTAGE SECTION TABLET STYLES START */
     @media screen and (min-width: 768px) {
 
     .advantage-section {
         width: 768px;
-        padding-top: 120px;
-        padding-bottom: 120px;
         margin-left: auto;
         margin-right: auto;
     }
+                
         
     .advantage-list {
         flex-direction: row;
@@ -575,6 +574,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     @media screen and (min-width: 1158px) {
         .advantage-section {
             width: 1158px;
+            padding-top: 120px;
+            padding-bottom: 120px;
         }
     
         .advantage-icon-container {
@@ -586,8 +587,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
             border: 1px solid #8E8F99;
             background: #F4F4FD;
             margin-bottom: 8px;
-    
         }
+
         .advantage-list {
             flex-direction: row;
             align-items: baseline;
