@@ -242,6 +242,131 @@ body {
 }
 /* /HEADER  MOBILE STYLES END */
 
+/* HEADER TABLET STYLES START */
+
+@media screen and (min-width: 768px) {
+
+    .header-page {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .container {
+        width: 768px;
+
+    }
+
+
+    .mobile-open-btn {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation-menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .adrress-info {
+        display: block;
+    }
+
+    .address-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navigation-link {
+        display: block;
+        padding: 24px 0;
+        color: #2E2F42;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navigation-link:hover,
+    .navigation-link:focus {
+        color: #404BBF;
+    }
+
+    .contact-information {
+        display: block;
+        color: #434455;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+
+    .active {
+        position: relative;
+        color: #404bbf;
+    }
+
+
+    .navigation-link.active::after {
+        position: absolute;
+        display: block;
+        content: '';
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        width: 100%;
+        background-color: #404bbf;
+        border-radius: 2px;
+    }
+
+
+}
+
+/* /HEADER TABLET STYLES  END*/
+
+/* /HEADER DESKTOP STYLES  START*/
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+
+    }
+
+    .contact-information {
+        color: #434455;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .address-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+
+    .contact-information {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+}
+
+/* /HEADER DESKTOP STYLES  END*/
+
 
 
 /* HERO MOBILE STYLES START */
@@ -305,149 +430,20 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 /* /HERO MOBILE STYLES END */
 
-
-
-/* HEADER TABLET STYLES START */
-
-@media screen and (min-width: 768px) {
-
-.header-page {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.container {
-    width: 768px;
-    
-}
-
-
-.mobile-open-btn {
-    display: none;
-}
-
-.mobile-menu {
-    display: none;
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-}
-
-.navigation-menu {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.adrress-info {
-    display: block;
-}
-
-.address-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.navigation-link {
-    display: block;
-    padding: 24px 0;
-    color: #2E2F42;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation-link:hover,
-.navigation-link:focus {
-    color: #404BBF;
-}
-
-.contact-information {
-    display: block;
-    color: #434455;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-}
-
-.active {
-    position: relative;
-    color: #404bbf;
-}
-
-
-.navigation-link.active::after {
-    position: absolute;
-    display: block;
-    content: '';
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    width: 100%;
-    background-color: #404bbf;
-    border-radius: 2px;
-}
-
-
-}
-/* /HEADER TABLET STYLES  END*/
-
-
-
-/* /HEADER DESKTOP STYLES  START*/
-@media screen and (min-width: 1158px) {
-    .container {
-        width: 1158px;
-
-    }
-
-    .contact-information {
-        color: #434455;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-
-    .address-menu {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        }
-    
-
-    .contact-information {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-       
-}
-
-
-
-/* /HEADER DESKTOP STYLES  END*/
-
-
 /* HERO TABLET STYLES START */
 
 @media screen and (min-width: 768px) {
     .hero-section {
-    width: 768px;
-    padding-top: 112px;
-    padding-bottom: 112px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-hero-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    }  
+        width: 768px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-hero-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
     .hero-container {
         gap: 36px;
     }
@@ -459,23 +455,19 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         line-height: 1.07;
         letter-spacing: 0.02em;
     }
-    
+
 }
 
- @media screen and (min-resolution: 192dpi) and (min-width: 768px),
- screen and (min-resolution: 2dppx) and (min-width: 768px),
- screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-     .hero-section {
-         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-hero-bg@2x.jpg);
-         
-     }
- }
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-hero-bg@2x.jpg);
+
+    }
+}
 
 /* /HERO TABLET STYLES END */
-
-
-
-
 
 /* HERO DESKTOP STYLES START */
 
@@ -511,4 +503,124 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 
 /* /HERO DECKTOP STYLES END */
+
+
+
+/* ADVANTAGE SECTION MOBILE STYLES START */
+
+    .advantage-section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .advantage-icon-container {
+        display: none;
+    }
+
+    .advantage-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 72px;
+        align-items: center;
+    }
+    .advantage-title {
+        color: #2E2F42;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+    }
+    .advantage-text {
+        color: #434455;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+/* /ADVANTAGE SECTION MOBILE STYLES END */
+
+
+
+/* /ADVANTAGE SECTION TABLEY STYLES START */
+    @media screen and (min-width: 768px) {
+
+    .advantage-section {
+        width: 768px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    .advantage-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+        
+        .advantage-item {
+            width: calc((100% - 24px) / 2);
+            display: flex;
+            flex-direction: column;
+            }
+    }
+/* /ADVANTAGE SECTION TABLET STYLES END */
+
+/* /ADVANTAGE SECTION DESKTOP STYLES START */
+
+    @media screen and (min-width: 1158px) {
+        .advantage-section {
+            width: 1158px;
+        }
+    
+        .advantage-icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 112px;
+            border-radius: 4px;
+            border: 1px solid #8E8F99;
+            background: #F4F4FD;
+            margin-bottom: 8px;
+    
+        }
+        .advantage-list {
+            flex-direction: row;
+            align-items: baseline;
+            gap: 24px;
+        }
+        .advantage-item {
+            width: calc((100% - 72px) / 4);
+            display: flex;
+            flex-direction: column;
+            }
+
+        .advantage-title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+        .advantage-text {
+            font-weight: 400;
+            letter-spacing: 0.012em;
+        }
+        
+    }
+/* /ADVANTAGE SECTION DESKTOP STYLES START */
+
+
+
+
+
+
+
+
+
+
+
+
 
