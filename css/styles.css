@@ -762,6 +762,107 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 /* /TEAM SECTION DESKTOP STYLES END */
 
+/* PORTFOLIO SECTION MOBILE STYLES START */
+    .portfolio-section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+   .portfolio-title {
+       color: #2E2F42;
+       text-align: center;
+       font-size: 36px;
+       font-weight: 700;
+       line-height: 1.11;
+       letter-spacing: 0.02em;
+       text-transform: capitalize;
+       margin-bottom: 72px;
+
+   }
+
+   .portfolio-list {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: no-wrap;
+       gap: 48px;
+   }
+
+   .portfolio-description {
+       padding: 32px 16px;
+       border: 1px solid #e7e9fc;
+       border-top: none;
+   }
+
+   .portfolio-info {
+       color: #2E2F42;
+       font-size: 20px;
+       font-weight: 500;
+       line-height: 1.2;
+       letter-spacing: 0.02em;
+       margin-bottom: 8px;
+   }
+
+   .portfolio-type {
+       color: #434455;
+       font-size: 16px;
+       line-height: 1.5;
+       letter-spacing: 0.02em;
+   }
+
+
+/* PORTFOLIO SECTION MOBILE STYLES END */
+
+
+/* PORTFOLIO SECTION TABLET STYLES START */
+
+@media screen and (min-width: 768px) {
+
+    .portfolio-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            row-gap: 72px;
+            column-gap: 24px;
+        }
+    
+    .portfolio-four-sec {
+        flex-basis: calc((100% - 24px) / 2);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+        .portfolio-four-sec:hover {
+            box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+        }
+}
+
+/* PORTFOLIO SECTION TABLET STYLES END */
+
+
+/* PORTFOLIO SECTION DESKTOP STYLES START */
+
+@media screen and (min-width: 1158px) {
+    .portfolio-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .portfolio-list {
+        width: 1128px;
+        row-gap: 48px;
+    }
+
+    .portfolio-four-sec {
+        flex-basis: calc((100% - 2 * 24px) / 3);
+    }
+}
+/* PORTFOLIO SECTION DESKTOP STYLES END */
+
 
 
 
