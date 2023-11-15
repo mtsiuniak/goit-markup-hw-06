@@ -82,13 +82,9 @@ body {
 
 
 /* HEADER MOBILE STYLES START */
-@media screen and (min-width: 480px) {
-    .container {
-        width: 352px;
-    }
-}
 
 .header-container {
+    width: 320px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,6 +138,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: flex-start;
         padding-top: 72px;
         padding-left: 16px;
         padding-bottom: 40px;
@@ -391,7 +388,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .main-title {
-    max-width: 157px;
+    max-width: 222px;
     margin: 0 auto;
     color: #FFFFFF;
     text-align: center;
@@ -450,7 +447,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     .main-title {
-        max-width: 496px;
+        max-width: 497px;
         font-size: 56px;
         font-weight: 700;
         line-height: 1.07;
@@ -474,7 +471,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 @media screen and (min-width: 1158px) {
     .hero-section {
-        width: 1158px;
+        width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desktop-hero-bg.jpg);
@@ -485,6 +482,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     }
 
     .hero-container {
+        
         gap: 48px;
     }
 
